@@ -13,21 +13,24 @@
 }
 
 body {
-  height: 100vh;
-  display: grid;
-  place-items: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(var(--background-rgb));
-  margin: 0rem;
+  margin: 0;
   overflow: hidden;
+  font-size: 16px; /* Responsive font size */
 }
 
 .screen {
-  width: 500px;
+  width: 90%; /* Responsive width */
+  max-width: 500px; /* Limit screen width */
   display: flex;
-  border: 3px solid rgb(var(--primary-rgb) / 80%);
+  border: 3px solid rgba(var(--primary-rgb), 0.8); /* Adjusted border color */
   aspect-ratio: 10 / 16;
   border-radius: 1rem;
-  background-color: rgb(var(--primary-rgb) / 15%);
+  background-color: rgba(var(--primary-rgb), 0.15); /* Adjusted background color */
   overflow: hidden;
   position: relative;
   z-index: 10;
@@ -68,10 +71,10 @@ body {
   }
 }
 
-.screen-overlay {    
+.screen-overlay {
   background: linear-gradient(
-    rgb(var(--primary-rgb) / 0.15),
-    rgb(var(--primary-rgb) / 0.15) 3px,
+    rgba(var(--primary-rgb), 0.15),
+    rgba(var(--primary-rgb), 0.15) 3px,
     transparent 3px,
     transparent 9px
   );
@@ -81,8 +84,8 @@ body {
   animation: pan-overlay 22s infinite linear;
   position: absolute;
   z-index: 2;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 @keyframes pan-image {  
