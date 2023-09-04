@@ -13,7 +13,7 @@ window.onpointermove = event => {
 
 /* -- Text effect -- */
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = "10110100110001001010100100";
 
 let interval = null;
 
