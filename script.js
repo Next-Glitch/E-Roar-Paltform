@@ -13,7 +13,7 @@ window.onpointermove = event => {
 
 /* -- Text effect -- */
 
-const letters = "Rebellion";
+const letters = "R e b e l l i o n";
 
 let interval = null;
 
